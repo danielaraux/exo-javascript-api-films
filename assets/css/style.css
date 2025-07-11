@@ -1,5 +1,5 @@
 body {
-    color: orange;
+    background-color: beige;
 }
 
 .navbar-nav {
@@ -12,7 +12,11 @@ body {
     }
 }
 
-.container-logo-img>img {
-    width: 150px;
+.container-logo-img>a>img {
+    width: 120px;
     height: 100px;
+}
+
+img {
+    width: 18rem;
 }

@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exo-javascript-api-films</title>
-    <link rel="stylesheet" href="assets/css/style.css">
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="container">
+<body>
 
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <div class="container-logo-img navbar-collapse" id="navbarSupportedContent">
-                    <img src="assets/img/logo-site.png" alt="logo du site CineVault">
+
+                    <a href="index.html"><img src="assets/img/logo-site.png" alt="logo du site CineVault"></a>
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
@@ -32,22 +33,10 @@
         </nav>
     </header>
 
-
     <main>
 
-        <div class="container-card">
-
-            <div class="card" style="width: 18rem;">
-                <div id="imgFilm">Affiche du film</div>
-                <!-- <img src="..." class="card-img-top" alt="..."> -->
-                <div class="card-body">
-                    <h5 class="card-title" id="filmTitle"></h5>
-                    <p class="card-text">Date de sortie</p>
-                    <p class="card-text">Note moyenne <span>span note moyenne</span></p>
-                </div>
-            </div>
-
-
+        <!-- div pour créer les cards des films -->
+        <div class="d-flex flex-wrap justify-content-center" id="container-card">
         </div>
     </main>
 
