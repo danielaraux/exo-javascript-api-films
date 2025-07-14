@@ -6,11 +6,8 @@ const options = {
     }
 };
 
-// 
 
-
-
-
+// fetch pour les cards de l'accueil
 fetch('https://api.themoviedb.org/3/movie/now_playing?language=fr-FR&page=1', options)
     .then(res => res.json())
     .then(data => {
@@ -20,12 +17,16 @@ fetch('https://api.themoviedb.org/3/movie/now_playing?language=fr-FR&page=1', op
         console.log(data.results[1].title)
 
 
-        // Boucle for pour créer les cards
+        // Boucle for pour créer les cards et stocker les id des films
         for (let i = 0; i <= 19; i++) {
-            console.log(data.results[i].id)
+
+            // on stocke les id des films ici pour les mettre dans notre url
+            let idFilms = data.results[i]
+
+
             document.getElementById("container-card").innerHTML +=
                 `
-        <a href="description.html" class="text-decoration-none">
+        <a href="description.html?id=${idFilms.id}" class="text-decoration-none">
         <div class="card"
              <div class="card" style="width: 18rem;">
                      <div>

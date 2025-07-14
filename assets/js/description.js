@@ -7,11 +7,10 @@ const options = {
 };
 
 
-// const parsedUrl = new URL(window.location.href);
+const parsedUrl = new URL(window.location.href);
 
-// let id = parsedUrl.searchParams.get("id")
+let id = parsedUrl.searchParams.get("id")
 
-let id = 1374534
 
 
 fetch(`https://api.themoviedb.org/3/movie/${id}?language=fr-FR`, options)
