@@ -17,6 +17,19 @@ body {
     height: 100px;
 }
 
-img {
-    width: 18rem;
+#container-card {
+    gap: 20px;
+}
+
+#divcards {
+    display: flex;
+
+    @media (max-width: 414px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.navbar {
+    background-color: black;
 }
