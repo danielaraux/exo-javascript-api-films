@@ -1,0 +1,45 @@
+body {
+    background-color: beige;
+}
+
+.navbar-nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+
+    @media (min-width: 414px) {
+        width: 100%
+    }
+}
+
+.container-logo-img>a>img {
+    width: 120px;
+    height: 100px;
+}
+
+#container-card {
+    gap: 20px;
+}
+
+#divcards {
+    display: flex;
+
+    @media (max-width: 414px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.navbar {
+    background-color: black;
+}
+
+.accueil {
+    width: 100%;
+    text-align: center;
+    margin-right: 8%;
+
+    @media (max-width: 414px) {
+        margin-left: 10%;
+    }
+}
