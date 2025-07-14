@@ -17,12 +17,12 @@ fetch('https://api.themoviedb.org/3/movie/now_playing?language=fr-FR&page=1', op
         console.log(data.results[1].title)
 
 
+
         // Boucle for pour créer les cards et stocker les id des films
         for (let i = 0; i <= 19; i++) {
 
             // on stocke les id des films ici pour les mettre dans notre url
             let idFilms = data.results[i]
-
 
             document.getElementById("container-card").innerHTML +=
                 `

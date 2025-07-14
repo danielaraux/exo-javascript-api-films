@@ -33,3 +33,13 @@ body {
 .navbar {
     background-color: black;
 }
+
+.accueil {
+    width: 100%;
+    text-align: center;
+    margin-right: 8%;
+
+    @media (max-width: 414px) {
+        margin-left: 10%;
+    }
+}
