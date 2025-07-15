@@ -16,12 +16,14 @@
                 <div class="container-logo-img navbar-collapse" id="navbarSupportedContent">
 
                     <a href="index.html"><img src="assets/img/logo-site.png" alt="logo du site CineVault"></a>
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active fw-bold text-warning" aria-current="page"
-                                href="index.html">Accueil</a>
-                        </li>
-                    </ul>
+
+                    <a class="accueil fw-bold text-warning text-decoration-none" aria-current="page"
+                        href="index.html">Accueil</a>
+                    <form class="d-flex w-100" role="search" action="description.html">
+                        <input class="form-control me-2" name="filmSearch" type="text"
+                            placeholder="Rechercher un film..." aria-label="Search" id="filmSearch" />
+                        <button class="btn btn-outline-success" type="submit">🔍</button>
+                    </form>
                 </div>
             </div>
         </nav>
@@ -32,7 +34,8 @@
         <div class="py-3" id="divcards">
         </div>
 
-        <h2 class="text-center my-5">Casting</h2>
+        <div class="d-flex flex-wrap justify-content-center my-3" id="container-card">
+        </div>
 
         <div class="d-flex flex-wrap justify-content-center bg-light container" id="actors">
 

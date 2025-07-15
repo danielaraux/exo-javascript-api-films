@@ -36,7 +36,7 @@ fetch('https://api.themoviedb.org/3/movie/now_playing?language=fr-FR&page=1', op
                  <div class="card-body">
                      <h5 class="card-title m-2"><b>${data.results[i].title}</b></h5>
                      <p class="card-text m-2">Date de sortie : ${data.results[i].release_date}</p>
-                     <p class="card-text m-2">Note moyenne : ${data.results[i].vote_average}</p>
+                     <p class="card-text m-2">Note moyenne : ${data.results[i].vote_average}/10</p>
                  </div>
              </div>
          </div></a>
