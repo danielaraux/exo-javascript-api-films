@@ -43,3 +43,11 @@ body {
         margin-left: 10%;
     }
 }
+
+.lien-retour {
+    text-align: end;
+}
+
+.imgAnon {
+    height: 15rem;
+}
