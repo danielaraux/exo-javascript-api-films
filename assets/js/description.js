@@ -69,7 +69,7 @@ function showDataFilm() {
 
             // Description du film avec image et synopsis
             document.getElementById("divcards").innerHTML += `
-        <div><img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2${insideFilm.poster_path}" alt="affiche du film" style="width:20rem" class="mt-4 mx-5"></div>
+        <div><img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2${insideFilm.poster_path}" alt="affiche du film" style="width:20rem" class="mt-4"></div>
             <div class="px-4 my-4">
             <a class="lien-retour nav-link fs-5 active fw-bold" aria-current="page" href="index.html">Retour</a>
                 <h1><b>${insideFilm.title}</b></h1>
