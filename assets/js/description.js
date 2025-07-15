@@ -29,7 +29,7 @@ function submitFilm() {
 
             // Condition pour afficher un message si nom du film pas existant
             if (data.results.length <= 0) {
-                document.getElementById("container-card").innerHTML = "<b>Il n'y a pas de films de ce nom, veuillez recommencer et entrer un nom de film existant</b>"
+                document.getElementById("container-card").innerHTML = "<b>Film non trouvé ou non existant, veuillez réessayer.</b>"
             } else {
 
                 for (let i = 0; i <= data.results.length; i++) {
@@ -97,7 +97,7 @@ function showDataFilm() {
                 if (actors.cast[i].profile_path == null) {
                     document.getElementById("actors").innerHTML += `
                     <div class="card m-2" style="width: 10rem;">
-               <img src="assets/img/anonphoto.png" class="card-img-top" alt="actors profile picture">
+               <img src="assets/img/imageanonyme.jpg" class="card-img-top imgAnon" alt="actors profile picture">
             
                 <div class="card-body">
                     <h5 class="card-title"><b>${actors.cast[i].name}</b></h5>
